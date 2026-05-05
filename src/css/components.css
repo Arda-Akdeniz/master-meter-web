@@ -3,7 +3,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(90deg, rgb(255 255 255 / 40%) 0%, rgb(0 148 68 / 80%) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 40%) 0%,
+    rgb(255 255 255 / 40%) 48%,
+    rgb(0 148 68 / 80%) 60%
+  );
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgb(255 255 255 / 20%);
   box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
