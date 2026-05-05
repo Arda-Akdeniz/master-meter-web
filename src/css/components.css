@@ -3,9 +3,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgb(0 51 28 / 95%);
+  background: rgb(255 255 255 / 12%);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
   box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
 }
 
@@ -563,7 +563,7 @@ footer {
 .stat-number {
   font-size: 32px;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-white);
   margin-bottom: 8px;
 }
 
