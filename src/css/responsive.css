@@ -121,6 +121,10 @@
     font-size: 14px;
   }
 
+  .wrap {
+    padding: 0 12px;
+  }
+
   .hero-card {
     aspect-ratio: 1 / 1;
     min-height: auto;
