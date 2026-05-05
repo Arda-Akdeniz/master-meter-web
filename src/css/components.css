@@ -29,7 +29,6 @@ header {
   max-width: 220px;
   display: block;
   object-fit: contain;
-  filter: brightness(1.3) contrast(1.2) saturate(1.1);
 }
 
 .mobile-nav {
