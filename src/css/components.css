@@ -638,4 +638,19 @@ footer {
 /* CTA section */
 .cta-section {
   text-align: center;
+  padding: 60px 0;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 0 0 16px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
