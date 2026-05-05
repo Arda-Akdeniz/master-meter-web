@@ -106,6 +106,15 @@
 
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stat-item {
+    padding: 8px;
+  }
+
+  .section-title span {
+    font-size: 22px;
   }
 
   .hero .wrap h1 {
