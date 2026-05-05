@@ -439,6 +439,13 @@ label {
   gap: 18px;
 }
 
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
 /* section title */
 .section-title {
   text-align: center;

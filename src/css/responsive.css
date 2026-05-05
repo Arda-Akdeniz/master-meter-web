@@ -19,6 +19,10 @@
     grid-template-columns: 1fr;
   }
 
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
   .contact {
     grid-template-columns: 1fr;
   }
@@ -47,6 +51,34 @@
   .hero h1 {
     font-size: 34px;
   }
+
+  .features-header h2 {
+    font-size: 28px;
+  }
+
+  .section-title span {
+    font-size: 26px;
+  }
+
+  section.wrap {
+    padding: 40px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width <= 520px) {
@@ -74,5 +106,27 @@
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero .wrap h1 {
+    font-size: 28px !important;
+  }
+
+  section.wrap {
+    padding: 32px 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 10px 20px;
   }
 }
