@@ -29,6 +29,7 @@
 
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .stats-bar {
@@ -56,8 +57,16 @@
     font-size: 34px;
   }
 
+  .features-header {
+    margin-bottom: 40px;
+  }
+
   .features-header h2 {
     font-size: 28px;
+  }
+
+  .feature-item {
+    padding: 16px;
   }
 
   .section-title span {
@@ -117,6 +126,10 @@
 
   .stat-number {
     font-size: 24px;
+  }
+
+  .feature-item {
+    padding: 12px;
   }
 
   .section-title span {
