@@ -1,0 +1,15 @@
+:root {
+    --bg-1: #2BB673;
+    --bg-2: #009444;
+    --bg-3: #006838;
+    --header-bg: rgba(255,255,255,0.92);
+    --header-fg: #0b5c3a;
+    --muted: #5b6b63;
+    --primary: #2BB673;
+    --accent: #2BB673;
+    --card-white: #f2f3f2;
+    --shadow: 0 16px 40px rgba(0,0,0,.32);
+    --shadow2: 0 8px 24px rgba(0,0,0,.22);
+    --radius2: 22px;
+    --max: 1200px;
+}
