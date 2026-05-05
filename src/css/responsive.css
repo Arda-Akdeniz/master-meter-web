@@ -1,4 +1,4 @@
-@media (width <= 980px) {
+@media (width <= 768px) {
   nav .nav-links {
     display: none;
   }
@@ -7,12 +7,50 @@
     display: inline-flex;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.open {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-content {
+    order: -1;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-item {
+    padding: 16px;
   }
 
   .grid3 {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .about {
@@ -27,147 +65,155 @@
     grid-template-columns: 1fr;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .stats-bar {
-    padding: 32px 0;
-  }
-
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .hero {
-    padding: 38px 0;
-  }
-
-  .hero-card {
-    min-height: 320px;
-  }
-
-  .hero-content {
-    padding: 28px 22px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .features-header {
-    margin-bottom: 40px;
-  }
-
-  .features-header h2 {
-    font-size: 28px;
-  }
-
-  .feature-item {
-    padding: 16px;
-  }
-
-  .section-title span {
-    font-size: 26px;
-  }
-
-  .cta-section h2 {
-    font-size: 28px;
-  }
-
-  .cta-section p {
-    font-size: 16px;
-  }
-
-  section.wrap {
-    padding: 40px 0;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-}
-
-@media (width <= 520px) {
-  .logo-text {
-    font-size: 22px;
-  }
-
-  .logo img {
-    height: 48px;
-    max-width: 170px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
-  .slider-btn {
-    width: 42px;
-    height: 42px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 16px;
   }
 
   .stat-item {
-    padding: 8px;
+    padding: 12px;
   }
 
   .stat-number {
     font-size: 24px;
   }
 
-  .feature-item {
-    padding: 12px;
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
   }
 
-  .section-title span {
-    font-size: 22px;
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .hero {
-    padding: 24px 0;
-  }
-
-  .hero .wrap h1 {
-    font-size: 28px !important;
+  .btn-group .btn {
+    width: 100%;
   }
 
   section.wrap {
     padding: 32px 0;
   }
 
-  .btn {
-    padding: 10px 20px;
+  .wrap {
+    padding: 0 16px;
+  }
+
+  .features-header h2 {
+    font-size: 26px;
+  }
+
+  .section-title span {
+    font-size: 24px;
+  }
+
+  .cta-section h2 {
+    font-size: 26px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 480px) {
+  .header-inner {
+    padding: 10px 0;
+  }
+
+  .logo img {
+    height: 40px;
+    max-width: 140px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 24px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
     font-size: 14px;
+  }
+
+  .hero-card {
+    min-height: 180px;
+  }
+
+  .features-grid {
+    gap: 12px;
+  }
+
+  .feature-item {
+    padding: 12px;
+  }
+
+  .feature-icon {
+    font-size: 32px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-item {
+    padding: 10px;
+  }
+
+  .stat-number {
+    font-size: 20px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .btn-group {
+    gap: 8px;
+  }
+
+  section.wrap {
+    padding: 24px 0;
   }
 
   .wrap {
     padding: 0 12px;
   }
 
-  .hero-card {
-    aspect-ratio: 4 / 3;
-    min-height: auto;
+  .features-header h2 {
+    font-size: 22px;
   }
 
-  .hero-buttons {
-    width: 100%;
+  .section-title span {
+    font-size: 20px;
   }
 
-  .hero-buttons .btn {
-    width: 100%;
-    padding: 10px 20px;
+  .cta-section h2 {
+    font-size: 22px;
+  }
+
+  .cta-section p {
+    font-size: 14px;
   }
 }

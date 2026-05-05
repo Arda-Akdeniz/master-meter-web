@@ -21,6 +21,12 @@ header {
   padding: 12px 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -653,4 +659,14 @@ footer {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (width <= 768px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
 }
