@@ -1,60 +1,80 @@
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    background: linear-gradient(180deg,var(--bg-1) 0%,var(--bg-2) 25%,var(--bg-3) 55%,#00331c 78%,#00170d 100%);
-    color: #fff;
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  background: linear-gradient(
+    160deg,
+    var(--green-light) 0%,
+    var(--green-main) 30%,
+    var(--green-dark) 65%,
+    var(--green-darkest) 100%
+  );
+  color: var(--text-white);
+  line-height: 1.6;
 }
 
 a {
-    color: inherit
+  color: var(--text-white);
+  text-decoration: none;
 }
 
 .wrap {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 0 20px
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 12px 12px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,.16);
-    background: rgba(255,255,255,.06);
-    color: #fff;
-    outline: none;
-    font: inherit;
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: rgb(255 255 255 / 15%);
+  color: var(--text-white);
+  outline: none;
+  font: inherit;
+  transition: all 0.2s ease;
 }
 
-input::placeholder, textarea::placeholder {
-    color: rgba(255,255,255,.65);
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
 }
 
-input:focus, textarea:focus {
-    border-color: rgba(43,182,115,.75);
-    background: rgba(255,255,255,.08);
+input:focus,
+textarea:focus {
+  border-color: var(--text-white);
+  background: rgb(255 255 255 / 20%);
+  box-shadow: 0 0 0 3px rgb(255 255 255 / 10%);
 }
 
 :focus-visible {
-    outline: 3px solid rgba(43,182,115,.55);
-    outline-offset: 3px;
-    border-radius: 10px;
+  outline: 2px solid var(--text-white);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto
-    }
+  html {
+    scroll-behavior: auto;
+  }
 
-    * {
-        transition: none !important
-    }
+  * {
+    transition: none !important;
+  }
 }

@@ -1,15 +1,25 @@
 :root {
-    --bg-1: #2BB673;
-    --bg-2: #009444;
-    --bg-3: #006838;
-    --header-bg: rgba(255,255,255,0.92);
-    --header-fg: #0b5c3a;
-    --muted: #5b6b63;
-    --primary: #2BB673;
-    --accent: #2BB673;
-    --card-white: #f2f3f2;
-    --shadow: 0 16px 40px rgba(0,0,0,.32);
-    --shadow2: 0 8px 24px rgba(0,0,0,.22);
-    --radius2: 22px;
-    --max: 1200px;
+  /* Yeşil Gradient Palette */
+  --green-light: #2bb673;
+  --green-main: #009444;
+  --green-dark: #006838;
+  --green-darkest: #00331c;
+  --primary: #009444;
+  --accent: #2bb673;
+  --text-white: #fff;
+  --text-soft: rgb(255 255 255 / 82%);
+  --text-muted: rgb(255 255 255 / 65%);
+  --card-glass: rgb(255 255 255 / 12%);
+  --card-hover: #fff;
+  --border-light: rgb(255 255 255 / 15%);
+  --border-dark: rgb(0 0 0 / 8%);
+
+  /* Shadows */
+  --shadow: 0 8px 32px rgb(0 0 0 / 10%);
+  --shadow2: 0 4px 16px rgb(0 0 0 / 8%);
+  --shadow-hover: 0 20px 40px rgb(0 0 0 / 20%);
+
+  /* Spacing & Sizing */
+  --radius2: 12px;
+  --max: 1200px;
 }

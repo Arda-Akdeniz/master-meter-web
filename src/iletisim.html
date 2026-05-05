@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#009444" />
+
+    <title>İletişim | MASTER METER</title>
+    <meta
+      name="description"
+      content="MASTER METER iletişim bilgileri. Bize yazın veya arayın. 7/24 teknik destek."
+    />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="header-inner">
+          <a class="logo" href="/" aria-label="MASTER METER ana sayfa">
+            <img src="Photos/logoyeni.png" alt="MASTER METER logo" loading="eager" />
+            <span class="logo-text"><span class="logo-text-strong"></span></span>
+          </a>
+          <nav>
+            <div class="nav-links">
+              <a href="hakkimizda.html">HAKKIMIZDA</a>
+              <a href="urunler.html">ÜRÜNLER</a>
+              <a href="iletisim.html">İLETİŞİM</a>
+            </div>
+          </nav>
+          <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobil menü">
+          <a href="hakkimizda.html">HAKKIMIZDA</a>
+          <a href="urunler.html">ÜRÜNLER</a>
+          <a href="iletisim.html">İLETİŞİM</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap" style="padding: 60px 0">
+          <h1
+            style="
+              font-size: 42px;
+              font-weight: 700;
+              color: var(--text-white);
+              margin: 0 0 16px;
+              text-align: center;
+            "
+          >
+            İletişim
+          </h1>
+          <p
+            style="
+              color: var(--text-soft);
+              font-size: 18px;
+              text-align: center;
+              margin: 0;
+              max-width: 70ch;
+              margin: 0 auto;
+            "
+          >
+            Teklif, katalog veya teknik soru için bize yazın.
+          </p>
+        </div>
+      </section>
+
+      <section class="wrap" style="padding: 60px 0">
+        <div class="contact">
+          <div
+            class="card"
+            style="
+              padding: 26px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              text-align: center;
+            "
+          >
+            <h3>İletişim Bilgileri</h3>
+            <p style="color: var(--text-soft)">
+              Kurumsal iletişim kanallarımız üzerinden bize ulaşabilirsiniz.
+            </p>
+            <p style="margin: 0"><strong>Email:</strong></p>
+            <p style="margin: 0; color: var(--text-white)">
+              <a
+                href="mailto:alc@mastermeter.net"
+                style="color: var(--text-white); text-decoration: underline"
+                >alc@mastermeter.net</a
+              >
+            </p>
+            <p style="margin: 0; margin-top: 12px"><strong>Telefon:</strong></p>
+            <p style="margin: 0; color: var(--text-white)">
+              <a
+                href="tel:+902165773750"
+                style="color: var(--text-white); text-decoration: underline"
+                >+90 216 577 3750</a
+              >
+            </p>
+            <p style="margin: 0; margin-top: 12px"><strong>Adres:</strong></p>
+            <p style="margin: 0; color: var(--text-white)">
+              KÜÇÜKBAKKALKÖY MAH. KOCASİNAN CAD, Küçükbakkalköy, Selvili Sok. NO 4 D:55, 34750
+              Ataşehir/İstanbul
+            </p>
+          </div>
+
+          <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 12px">
+            <h3>Hızlı Teklif Formu</h3>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xandzjop"
+              method="POST"
+              style="display: flex; flex-direction: column; gap: 12px"
+            >
+              <label style="color: var(--text-white); font-weight: 600; font-size: 13px"
+                >AD SOYAD</label
+              >
+              <input type="text" name="name" placeholder="Adınız Soyadınız" required />
+
+              <label style="color: var(--text-white); font-weight: 600; font-size: 13px"
+                >FİRMA</label
+              >
+              <input type="text" name="company" placeholder="Firma adı (opsiyonel)" />
+
+              <label style="color: var(--text-white); font-weight: 600; font-size: 13px"
+                >E-POSTA</label
+              >
+              <input type="email" name="email" placeholder="ornek@firma.com" required />
+
+              <label style="color: var(--text-white); font-weight: 600; font-size: 13px"
+                >MESAJ</label
+              >
+              <textarea
+                name="message"
+                placeholder="Kısa bir açıklama yazın (ürün, adet, lokasyon vb.)"
+                style="height: 120px"
+                required
+              ></textarea>
+
+              <input type="hidden" name="_subject" value="MASTER METER - Teklif / Bilgi Talebi" />
+
+              <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap">
+                <button class="btn primary" type="submit">Gönder</button>
+                <span
+                  id="formStatus"
+                  style="font-size: 13px; color: rgba(255, 255, 255, 0.9)"
+                  role="status"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">© <span id="year"></span> MASTER METER. Tüm hakları saklıdır.</div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
