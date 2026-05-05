@@ -3,7 +3,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgb(0 20 10 / 40%);
+  background: rgb(0 51 28 / 95%);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-light);
   box-shadow: 0 4px 20px rgb(0 0 0 / 20%);
