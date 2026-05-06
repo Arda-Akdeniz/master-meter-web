@@ -1,5 +1,3 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-
 const form = document.getElementById('contactForm');
 const statusEl = document.getElementById('formStatus');
 if (form && statusEl) {

@@ -14,7 +14,6 @@ MASTER METER web projesine katkı sağlamak için bu adımları izleyin.
    ```bash
    npm install
    ```
-
 ## Development Süreci
 
 ### 1. Feature Branch Oluştur

@@ -51,10 +51,6 @@ textarea {
   transition: all 0.2s ease;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: var(--text-muted);
-}
 
 input:focus,
 textarea:focus {
