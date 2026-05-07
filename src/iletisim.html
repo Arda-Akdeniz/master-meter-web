@@ -12,26 +12,26 @@
       content="MASTER METER iletişim bilgileri. Bize yazın veya arayın. 7/24 teknik destek."
     />
 
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="/variables.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/components.css" />
+    <link rel="stylesheet" href="/responsive.css" />
   </head>
 
   <body>
     <header>
       <div class="wrap">
         <div class="header-inner">
-          <a class="logo" href="/" aria-label="MASTER METER ana sayfa">
+          <a class="logo" href="/master-meter-web/" aria-label="MASTER METER ana sayfa">
             <img src="Photos/logoyeni.png" alt="MASTER METER logo" loading="eager" />
             <span class="logo-text"><span class="logo-text-strong"></span></span>
           </a>
           <nav>
             <div class="nav-links">
-              <a href="/">ANA SAYFA</a>
-              <a href="hakkimizda.html">HAKKIMIZDA</a>
-              <a href="urunler.html">ÜRÜNLER</a>
-              <a href="iletisim.html" class="active">İLETİŞİM</a>
+              <a href="/master-meter-web/">ANA SAYFA</a>
+              <a href="/master-meter-web/hakkimizda.html">HAKKIMIZDA</a>
+              <a href="/master-meter-web/urunler.html">ÜRÜNLER</a>
+              <a href="/master-meter-web/iletisim.html" class="active">İLETİŞİM</a>
             </div>
           </nav>
           <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç/kapat" aria-expanded="false">
@@ -43,55 +43,27 @@
           </button>
         </div>
         <div class="mobile-nav" id="mobileNav" aria-label="Mobil menü">
-          <a href="/">ANA SAYFA</a>
-          <a href="hakkimizda.html">HAKKIMIZDA</a>
-          <a href="urunler.html">ÜRÜNLER</a>
-          <a href="iletisim.html">İLETİŞİM</a>
+          <a href="/master-meter-web/">ANA SAYFA</a>
+          <a href="/master-meter-web/hakkimizda.html">HAKKIMIZDA</a>
+          <a href="/master-meter-web/urunler.html">ÜRÜNLER</a>
+          <a href="/master-meter-web/iletisim.html">İLETİŞİM</a>
         </div>
       </div>
     </header>
 
     <main id="iletisim">
-      <section class="hero">
-        <div class="wrap" style="padding: 60px 0">
-          <h1
-            style="
-              font-size: 42px;
-              font-weight: 700;
-              color: var(--text-white);
-              margin: 0 0 16px;
-              text-align: center;
-            "
-          >
-            İletişim
-          </h1>
-          <p
-            style="
-              color: var(--text-soft);
-              font-size: 18px;
-              text-align: center;
-              margin: 0;
-              max-width: 70ch;
-              margin: 0 auto;
-            "
-          >
+      <section class="hero page-hero-section">
+        <div class="wrap">
+          <h1 class="page-hero-title">İletişim</h1>
+          <p class="page-hero-description">
             Teklif, katalog veya teknik soru için bize yazın.
           </p>
         </div>
       </section>
 
-      <section class="wrap" style="padding: 60px 0">
+      <section class="wrap page-section">
         <div class="contact">
-          <div
-            class="card contact-info"
-            style="
-              padding: 26px;
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              text-align: center;
-            "
-          >
+          <div class="card contact-info contact-card-inner">
             <h3>İletişim Bilgileri</h3>
             <p>
               Kurumsal iletişim kanallarımız üzerinden bize ulaşabilirsiniz.
@@ -111,13 +83,13 @@
             </p>
           </div>
 
-          <div class="card form-card" style="padding: 26px; display: flex; flex-direction: column; gap: 12px">
+          <div class="card form-card">
             <h3>Hızlı Teklif Formu</h3>
             <form
               id="contactForm"
               action="https://formspree.io/f/xandzjop"
               method="POST"
-              style="display: flex; flex-direction: column; gap: 12px"
+              class="contact-form"
             >
               <strong>AD SOYAD</strong>
               <input type="text" name="name" placeholder="Adınız Soyadınız" required />
@@ -138,16 +110,16 @@
 
               <input type="hidden" name="_subject" value="MASTER METER - Teklif / Bilgi Talebi" />
 
-              <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: flex-end">
+              <div class="form-submit-wrapper">
                 <button class="btn primary" type="submit">
                   Gönder
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 8px; vertical-align: middle;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="submit-icon">
                     <path d="M3 21l19-9L3 3v7l15 2-15 2v7z"/>
                   </svg>
                 </button>
                 <span
                   id="formStatus"
-                  style="font-size: 13px; color: rgba(255, 255, 255, 0.9)"
+                  class="form-status"
                   role="status"
                   aria-live="polite"
                 ></span>
