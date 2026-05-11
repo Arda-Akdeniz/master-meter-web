@@ -886,12 +886,13 @@ details[open] .faq-body {
 #iletisim .contact-info:hover p,
 #iletisim .contact-info:hover a,
 #iletisim .contact-info:hover strong {
-  color: #000000 !important;
+  color: var(--primary) !important;
 }
 
 /* Form Card (sağ taraf) */
 #iletisim .form-card {
   background: var(--card-glass) !important;
+  padding: 26px;
 }
 
 #iletisim .form-card h3 {
@@ -921,11 +922,6 @@ details[open] .faq-body {
   color: var(--primary) !important;
   font-weight: 600 !important;
   font-size: 13px !important;
-}
-
-/* Form Card styling */
-#iletisim .form-card {
-  padding: 26px;
 }
 
 /* Form Card normal durum */
@@ -1130,11 +1126,6 @@ footer {
 }
 
 .stat-item:hover .stat-number {
-  transform: scale(1.15);
-  color: #007a36;
-}
-
-.stat-item:hover .stat-number {
   transform: scale(1.2);
   color: #007a36;
   text-shadow: 0 0 10px rgba(0, 148, 68, 0.5);
@@ -1163,10 +1154,6 @@ footer {
 
 .stat-item:nth-child(4) .stat-label {
   animation: fadeInUp 0.5s ease-out 1.15s both;
-}
-
-.stat-item:hover .stat-label {
-  color: var(--primary);
 }
 
 .stat-item:hover .stat-label {
