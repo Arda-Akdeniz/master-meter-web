@@ -960,12 +960,17 @@ details[open] .faq-body {
   text-align: center;
 }
 
+.page-hero-section .wrap {
+  text-align: center;
+}
+
 .page-hero-title {
   font-size: 42px;
   font-weight: 700;
   color: var(--text-white);
-  margin: 0 0 16px;
+  margin: 0 auto 16px;
   text-align: center;
+  display: block;
   animation: fadeInUp 0.8s ease-out both;
 }
 
