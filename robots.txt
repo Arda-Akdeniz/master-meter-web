@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+Sitemap: https://arda-akdeniz.github.io/master-meter-web/sitemap.xml
