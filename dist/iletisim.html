@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#009444" />
+
+    <title>İletişim | MASTER METER</title>
+    <meta
+      name="description"
+      content="MASTER METER iletişim bilgileri. Bize yazın veya arayın. 7/24 teknik destek."
+    />
+
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="header-inner">
+          <a class="logo" href="/master-meter-web/" aria-label="MASTER METER ana sayfa">
+            <img src="/master-meter-web/assets/logoyeni-DDQnHgE7.png" alt="MASTER METER logo" loading="eager" />
+            <span class="logo-text"><span class="logo-text-strong"></span></span>
+          </a>
+          <nav>
+            <div class="nav-links">
+              <a href="/master-meter-web/">ANA SAYFA</a>
+              <a href="/master-meter-web/hakkimizda.html">HAKKIMIZDA</a>
+              <a href="/master-meter-web/urunler.html">ÜRÜNLER</a>
+              <a href="/master-meter-web/iletisim.html" class="active">İLETİŞİM</a>
+            </div>
+          </nav>
+          <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobil menü">
+          <a href="/master-meter-web/">ANA SAYFA</a>
+          <a href="/master-meter-web/hakkimizda.html">HAKKIMIZDA</a>
+          <a href="/master-meter-web/urunler.html">ÜRÜNLER</a>
+          <a href="/master-meter-web/iletisim.html">İLETİŞİM</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="iletisim">
+      <section class="hero page-hero-section" style="text-align: center;">
+        <div class="wrap" style="text-align: center;">
+          <h1 class="page-hero-title" style="text-align: center; margin: 0 auto 16px;">İletişim</h1>
+          <p class="page-hero-description" style="text-align: center; margin: 0 auto; max-width: 70ch;">
+            Teklif, katalog veya teknik soru için bize yazın.
+          </p>
+        </div>
+      </section>
+
+      <section class="wrap page-section">
+        <div class="contact">
+          <div class="card contact-info contact-card-inner">
+            <h3>İletişim Bilgileri</h3>
+            <p>
+              Kurumsal iletişim kanallarımız üzerinden bize ulaşabilirsiniz.
+            </p>
+            <p style="margin: 0"><strong>Email:</strong></p>
+            <p style="margin: 0">
+              <a href="mailto:alc@mastermeter.net">alc@mastermeter.net</a>
+            </p>
+            <p style="margin: 0; margin-top: 12px"><strong>Telefon:</strong></p>
+            <p style="margin: 0">
+              <a href="tel:+902165773750">+90 216 577 3750</a>
+            </p>
+            <p style="margin: 0; margin-top: 12px"><strong>Adres:</strong></p>
+            <p style="margin: 0">
+              KÜÇÜKBAKKALKÖY MAH. KOCASİNAN CAD, Küçükbakkalköy, Selvili Sok. NO 4 D:55, 34750
+              Ataşehir/İstanbul
+            </p>
+          </div>
+
+          <div class="card form-card">
+            <h3>Hızlı Teklif Formu</h3>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xandzjop"
+              method="POST"
+              class="contact-form"
+            >
+              <strong>AD SOYAD</strong>
+              <input type="text" name="name" placeholder="Adınız Soyadınız" required />
+
+              <strong>FİRMA</strong>
+              <input type="text" name="company" placeholder="Firma adı (opsiyonel)" />
+
+              <strong>E-POSTA</strong>
+              <input type="email" name="email" placeholder="ornek@firma.com" required />
+
+              <strong>MESAJ</strong>
+              <textarea
+                name="message"
+                placeholder="Kısa bir açıklama yazın (ürün, adet, lokasyon vb.)"
+                style="height: 120px"
+                required
+              ></textarea>
+
+              <input type="hidden" name="_subject" value="MASTER METER - Teklif / Bilgi Talebi" />
+
+              <div class="form-submit-wrapper">
+                <button class="btn primary" type="submit">
+                  Gönder
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="submit-icon">
+                    <path d="M3 21l19-9L3 3v7l15 2-15 2v7z"/>
+                  </svg>
+                </button>
+                <span
+                  id="formStatus"
+                  class="form-status"
+                  role="status"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">© <span id="year"></span> MASTER METER. Tüm hakları saklıdır.</div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/scroll-animations.js"></script>
+  </body>
+</html>

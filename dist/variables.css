@@ -1,0 +1,25 @@
+:root {
+  /* Yeşil Gradient Palette */
+  --green-light: #2bb673;
+  --green-main: #009444;
+  --green-dark: #006838;
+  --green-darkest: #00331c;
+  --primary: #009444;
+  --accent: #2bb673;
+  --text-white: #fff;
+  --text-soft: rgb(255 255 255 / 82%);
+  --text-muted: rgb(255 255 255 / 65%);
+  --card-glass: rgb(255 255 255 / 12%);
+  --card-hover: #fff;
+  --border-light: rgb(255 255 255 / 15%);
+  --border-dark: rgb(0 0 0 / 8%);
+
+  /* Shadows */
+  --shadow: 0 8px 32px rgb(0 0 0 / 10%);
+  --shadow2: 0 4px 16px rgb(0 0 0 / 8%);
+  --shadow-hover: 0 20px 40px rgb(0 0 0 / 20%);
+
+  /* Spacing & Sizing */
+  --radius2: 12px;
+  --max: 1400px;
+}
