@@ -375,6 +375,8 @@ nav .nav-links a.active::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 0;
   animation: slideInFromLeft 0.8s ease-out both;
 }
@@ -1263,19 +1265,29 @@ footer {
   text-align: center;
 }
 
+.page-hero-section .wrap {
+  text-align: center;
+}
+
+.page-hero-section .page-hero-title,
+.page-hero-section .page-hero-description,
+.page-hero-section .wrap {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .page-hero-title {
   font-size: 42px;
   font-weight: 700;
   color: var(--text-white);
   margin: 0 0 16px;
-  text-align: center;
   animation: fadeInUp 0.8s ease-out both;
 }
 
 .page-hero-description {
   color: var(--text-soft);
   font-size: 18px;
-  text-align: center;
   margin: 0 auto !important;
   max-width: 70ch;
   padding: 0;
