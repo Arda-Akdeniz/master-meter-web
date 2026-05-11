@@ -648,7 +648,8 @@ nav .nav-links a.active::after {
   line-height: 1.6;
 }
 
-.cta-section p {
+.cta-section p,
+.cta-section-description {
   color: var(--text-soft);
   font-size: 18px;
   margin-bottom: 32px;
@@ -685,6 +686,28 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 0;
+  text-align: left;
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.about-description {
+  color: var(--text-soft);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .about-split {
@@ -816,6 +839,20 @@ details[open] .faq-body {
   animation: slideInFromRight 0.6s ease-out both;
 }
 
+.contact-card-inner {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* Contact Info Card (sol taraf) */
 #iletisim .contact-info {
   background: var(--card-glass) !important;
@@ -886,6 +923,11 @@ details[open] .faq-body {
   font-size: 13px !important;
 }
 
+/* Form Card styling */
+#iletisim .form-card {
+  padding: 26px;
+}
+
 /* Form Card normal durum */
 #iletisim .form-card strong {
   color: var(--text-white);
@@ -899,6 +941,24 @@ details[open] .faq-body {
   font-weight: 600;
   font-size: 13px;
   display: block;
+}
+
+.form-submit-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.submit-icon {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.form-status {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #iletisim .form-card input,
@@ -935,96 +995,6 @@ details[open] .faq-body {
 }
 
 /* Form Card HOVER - Input'lar sabit kalıyor */
-
-.contact-card-inner {
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.page-section {
-  padding: 60px 0;
-}
-
-/* page hero sections */
-.page-hero-section {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.page-hero-section .wrap {
-  text-align: center;
-}
-
-.page-hero-title {
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--text-white);
-  margin: 0 auto 16px;
-  text-align: center;
-  display: block;
-  animation: fadeInUp 0.8s ease-out both;
-}
-
-.page-hero-description {
-  color: var(--text-soft);
-  font-size: 18px;
-  text-align: center;
-  margin: 0 auto !important;
-  max-width: 70ch;
-  padding: 0;
-  display: block;
-  animation: fadeInUp 0.8s ease-out 0.2s both;
-}
-
-.about-title {
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--text-white);
-  margin: 0;
-  text-align: left;
-  line-height: 1.2;
-  animation: fadeInUp 0.8s ease-out both;
-}
-
-.about-description {
-  color: var(--text-soft);
-  font-size: 16px;
-  line-height: 1.8;
-  margin: 0;
-  animation: fadeInUp 0.8s ease-out 0.2s both;
-}
-
-/* Form Card styling */
-#iletisim .form-card {
-  padding: 26px;
-}
-
-.form-submit-wrapper {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.submit-icon {
-  margin-left: 8px;
-  vertical-align: middle;
-}
-
-.form-status {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.9);
-}
 
 section.wrap {
   scroll-margin-top: 110px;
@@ -1287,6 +1257,32 @@ footer {
   margin-bottom: 12px;
 }
 
+/* page hero sections */
+.page-hero-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 0 0 16px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.page-hero-description {
+  color: var(--text-soft);
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto !important;
+  max-width: 70ch;
+  padding: 0;
+  display: block;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
 /* CTA section */
 .cta-section {
   text-align: center;
@@ -1314,7 +1310,7 @@ footer {
 }
 
 .cta-section .btn {
-  animation: slideInFromBottom 0.8s ease-out 0.4s both;
+  animation: slideUp 0.8s ease-out 0.4s both;
 }
 
 .cta-section .btn:nth-child(1) {
