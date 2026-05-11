@@ -886,7 +886,7 @@ details[open] .faq-body {
 #iletisim .contact-info:hover p,
 #iletisim .contact-info:hover a,
 #iletisim .contact-info:hover strong {
-  color: #000000 !important;
+  color: var(--primary) !important;
 }
 
 /* Form Card (sağ taraf) */
