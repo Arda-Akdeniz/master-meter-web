@@ -39,16 +39,6 @@
     font-size: 15px;
   }
 
-  .page-hero-title {
-    text-align: center;
-  }
-
-  .page-hero-description {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-  }
-
   .features-grid {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -164,16 +154,6 @@
 
   .hero p {
     font-size: 14px;
-  }
-
-  .page-hero-title {
-    text-align: center;
-  }
-
-  .page-hero-description {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
   }
 
   .hero-card {
